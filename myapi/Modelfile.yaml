@@ -1,0 +1,14 @@
+from: llama3
+license: mit
+template: chat
+
+system: |-
+  You are a helpful assistant.
+
+adapter:
+  name: openvino
+  device: ryzen-npu
+
+parameter:
+  num_streams: 2
+  cache_dir: "./openvino_cache"
